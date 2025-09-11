@@ -6,7 +6,7 @@ This repository contains scripts and configurations to transform a fresh Ubuntu 
 
 It automates the installation of essential software, system tweaks, and user preferences to create a streamlined and efficient workspace.
 
-Omakase Ubuntu Setup is inspired by Basecamp's [Omakub](https://github.com/basecamp/omakub) project. The follows the spirit of "omakase" (お任せ, Japanese for "I leave it up to you"), where the chef selects the best dishes for you. Similarly, this setup script curates a selection of tools and configurations to enhance your Ubuntu experience.
+Omakase Ubuntu Setup is inspired by Basecamp's [Omakase](https://github.com/basecamp/omakub) project. The follows the spirit of "omakase" (お任せ, Japanese for "I leave it up to you"), where the chef selects the best dishes for you. Similarly, this setup script curates a selection of tools and configurations to enhance your Ubuntu experience.
 
 ## Install
 
