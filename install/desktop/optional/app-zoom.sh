@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Make video calls using https://zoom.us/
-cd /tmp
-wget https://zoom.us/client/latest/zoom_amd64.deb
-sudo apt install -y ./zoom_amd64.deb
-rm zoom_amd64.deb
-cd -
+wget -O /tmp/zoom_amd64.deb https://zoom.us/client/latest/zoom_amd64.deb
+sudo apt install -y /tmp/zoom_amd64.deb
+rm /tmp/zoom_amd64.deb
+

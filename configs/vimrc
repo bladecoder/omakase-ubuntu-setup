@@ -92,11 +92,6 @@ set encoding=utf8
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
-" Colors
-set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-
 
 " PLUGINS ---------------------------------------------------------------- {{{
 
@@ -108,8 +103,22 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/goyo.vim'
 Plug 'ahayworth/ink-syntax-vim'
-
+Plug 'ghifarit53/tokyonight-vim'
 call plug#end()
+
+
+" COLORS --------------------------------------------------------------- 
+@REM set background=dark
+@REM let g:solarized_termcolors=256
+@REM let g:solarized_termtrans=1
+
+set termguicolors
+
+let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_enable_italic = 1
+
+colorscheme tokyonight
+
 
 " MAPPINGS --------------------------------------------------------------- 
 
