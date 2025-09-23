@@ -6,8 +6,6 @@ tar -xzf /tmp/thelastline.tar.gz -C /tmp
 mkdir -p $HOME/apps
 mv /tmp/thelastline $HOME/apps/
 
-cp ./configs/icons/spine-icon.png $HOME/apps/Spine/
-
 # Create desktop entry
 APP_NAME="The Last Line"
 APP_PATH="$HOME/apps/thelastline/bin/thelastline"
