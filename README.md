@@ -1,4 +1,4 @@
-# Omakase Ubuntu Setup
+# Omakub Blade
 
 Opinionated Ubuntu Setup by @bladecoder
 
@@ -6,7 +6,7 @@ This repository contains scripts and configurations to transform a fresh Ubuntu 
 
 It automates the installation of essential software, system tweaks, and user preferences to create a streamlined and efficient workspace.
 
-Omakase Ubuntu Setup is inspired by Basecamp's [Omakub](https://github.com/basecamp/omakub) project. The follows the spirit of "omakase" (お任せ, Japanese for "I leave it up to you"), where the chef selects the best dishes for you. Similarly, this setup script curates a selection of tools and configurations to enhance your Ubuntu experience.
+Omakub Blade is based on Basecamp's [Omakub](https://github.com/basecamp/omakub) project. This follows the spirit of "omakase" (お任せ, Japanese for "I leave it up to you"), where the chef selects the best dishes for you. Similarly, this setup script curates a selection of tools and configurations to enhance your Ubuntu experience.
 
 ## Install
 
@@ -36,4 +36,10 @@ git clone https://github.com/bladecoder/omakase-ubuntu-setup.git && cd omakase-u
 ./install.sh 2>&1 | tee ~/omakase-ubuntu-setup.log
 ```
 
-Just follow the prompts and you'll be fine.
+## Running Individual Install Scripts
+
+Each script inside the `install` directory can be run separately to install specific tools or applications. Make sure to execute the script from the project root. For example:
+
+```
+omakub-blade > source install/desktop/optional/app-slack.sh
+``` 
