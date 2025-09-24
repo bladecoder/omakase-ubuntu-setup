@@ -17,7 +17,7 @@ You can install Omakase Ubuntu using one of these two methods:
 Run this single command in your terminal:
 
 ```sh
-curl -L https://raw.githubusercontent.com/bladecoder/omakase-ubuntu-setup/main/boot.sh | bash
+curl -L https://raw.githubusercontent.com/bladecoder/omakub-blade/main/boot.sh | bash
 ```
 
 ### Option 2: Manual Install
@@ -27,13 +27,13 @@ If you prefer to review the code first:
 1. Download the repo:
 
 ```sh
-git clone https://github.com/bladecoder/omakase-ubuntu-setup.git && cd omakase-ubuntu-setup
+git clone https://github.com/bladecoder/omakub-blade.git && cd omakub-blade
 ```
 
 2. Run the install script:
 
 ```sh
-./install.sh 2>&1 | tee ~/omakase-ubuntu-setup.log
+./install.sh 2>&1 | tee ~/omakub-blade.log
 ```
 
 ## Running Individual Install Scripts
