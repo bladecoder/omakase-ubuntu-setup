@@ -16,6 +16,7 @@ git config --global alias.change-commits "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3
 
 
 git config --global push.autoSetupRemote true 
+git config --global push.default current 
 git config --global init.defaultBranch main
 git config --global pull.rebase true
 
