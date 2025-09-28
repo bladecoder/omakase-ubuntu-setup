@@ -4,4 +4,3 @@ source ~/.local/share/bash/aliases
 source ~/.local/share/bash/functions
 source ~/.local/share/bash/prompt
 source ~/.local/share/bash/init
-[[ $- == *i* ]] && bind -f ~/.local/share/bash/inputrc
