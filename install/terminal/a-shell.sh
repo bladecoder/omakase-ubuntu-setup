@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Configure the bash shell using Omakase defaults
+# Configure the bash shell using defaults
 [ -f ~/.bashrc ] && mv ~/.bashrc ~/.bashrc.bak
 cp ./configs/bashrc ~/.bashrc
 
-# Configure the inputrc using Omakase defaults
+# Configure the inputrc using defaults
 [ -f ~/.inputrc ] && mv ~/.inputrc ~/.inputrc.bak
 cp ./configs/inputrc ~/.inputrc
 
