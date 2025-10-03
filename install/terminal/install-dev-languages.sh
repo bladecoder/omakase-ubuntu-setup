@@ -14,3 +14,4 @@ sudo apt install -y mise
 mise use --global python@latest
 mise use --global java@latest
 mise use --global rust
+mise use --global node@lts
