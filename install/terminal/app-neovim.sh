@@ -1,6 +1,26 @@
 #!/bin/bash
 
-sudo apt install -y neovim
+# Detect system architecture
+ARCH=$(uname -m)
+case $ARCH in
+  x86_64)
+    NVIM_ARCH="linux-x86_64"
+    ;;
+  aarch64|arm64)
+    NVIM_ARCH="linux-aarch64"
+    ;;
+  *)
+    echo "Unsupported architecture: $ARCH"
+    exit 1
+    ;;
+esac
+
+wget -O /tmp/nvim.tar.gz "https://github.com/neovim/neovim/releases/download/stable/nvim-${NVIM_ARCH}.tar.gz"
+tar -xf /tmp/nvim.tar.gz -C /tmp
+sudo install /tmp/nvim-${NVIM_ARCH}/bin/nvim /usr/local/bin/nvim
+sudo cp -R /tmp/nvim-${NVIM_ARCH}/lib /usr/local/
+sudo cp -R /tmp/nvim-${NVIM_ARCH}/share /usr/local/
+rm -rf /tmp/nvim-${NVIM_ARCH} /tmp/nvim.tar.gz
 
 # Install luarocks and tree-sitter-cli to resolve lazyvim :checkhealth warnings
 sudo apt install -y luarocks tree-sitter-cli
@@ -30,7 +50,7 @@ if [ ! -d "$HOME/.config/nvim" ]; then
 fi
 
 # Replace desktop launcher with one running inside Alacritty
-if [[ -d ~/.local/share/applications ]]; then
-  sudo rm -rf /usr/share/applications/nvim.desktop
-  source ./applications/Neovim.sh
-fi
+# if [[ -d ~/.local/share/applications ]]; then
+#   sudo rm -rf /usr/share/applications/nvim.desktop
+#   source ./applications/Neovim.sh
+# fi
