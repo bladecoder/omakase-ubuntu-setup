@@ -7,7 +7,7 @@ case $ARCH in
     NVIM_ARCH="linux-x86_64"
     ;;
   aarch64|arm64)
-    NVIM_ARCH="linux-aarch64"
+    NVIM_ARCH="linux-arm64"
     ;;
   *)
     echo "Unsupported architecture: $ARCH"
